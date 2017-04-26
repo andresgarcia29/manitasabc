@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet", href="/stylesheets/style.css")
+        link(rel="stylesheet", href="/stylesheets/materialize.min.css")
+        link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+        link(href="//vjs.zencdn.net/5.11/video-js.min.css" rel="stylesheet")
+        script(src="//vjs.zencdn.net/5.11/video.min.js")
+    
+        title= title
+    
+    header
+        nav
+            div.nav-wrapper.light-blue.darken-4
+                a(href="#", class="brand-logo center")
+                    img(src="https://cdn3.iconfinder.com/data/icons/social-icons-5/607/Twitterbird.png", widht="50px", height="50px", class="logo-img")
+                a(data-activates="mobile-demo" class="button-collapse")
+                    i.material-icons= "menu"
+                ul(class="right hide-on-med-and-down")
+
+                    if !loggeado
+                        li.icon-button
+                            a(href="/create", class="waves-effect waves-light btn red lighten-1 tooltipped", data-position="bottom", data-delay="50" ,data-tooltip="Crear Usuario")
+                                i(class="material-icons")= "create"
+
+                        li.icon-button
+                            a(href="/login", class="waves-effect waves-light btn  red lighten-1 tooltipped", data-position="bottom", data-delay="50" ,data-tooltip="Iniciar Sesión")
+                                i(class="material-icons")= "person"
+                    if loggeado
+                        li.icon-button
+                                a(href="/dashboard", class="waves-effect waves-light btn  red lighten-1 tooltipped", data-position="bottom", data-delay="50" ,data-tooltip="Mi Perfil")
+                                    i(class="material-icons")= "face"
+                        li.icon-button
+                                a(href="/learning", class="waves-effect waves-light btn  red lighten-1 tooltipped", data-position="bottom", data-delay="50" ,data-tooltip="Aprender")
+                                    i(class="material-icons")= "toc"
+                        li.icon-button
+                                a(href="/logout", class="waves-effect waves-light btn  red lighten-1 tooltipped", data-position="bottom", data-delay="50" ,data-tooltip="LogOut")
+                                    i(class="material-icons")= "open_in_browser"
+
+                ul(class="left hide-on-med-and-down")
+                    li.icon-link
+                        a(href="/", class="waves-effect waves-light")
+                            i(class="material-icons")= "home"
+                            p="Inicio"
+                            
+                    li.icon-link
+                        a(href="/#mision_vision", class="waves-effect waves-light")
+                            i(class="material-icons")= "directions"
+                            p="Misión"
+                    
+                    li.icon-link
+                        a(href="/#mision_vision", class="waves-effect waves-light")
+                            i(class="material-icons")= "visibility"
+                            p="Visión"
+                    
+                    li.icon-link
+                        a(href="/#nosotros", class="waves-effect waves-light")
+                            i(class="material-icons")= "people"
+                            p="Nosotros"
+                    
+                    //- li.icon-link
+                    //-     a(href="#", class="waves-effect waves-light")
+                    //-         i(class="material-icons")= "email"
+                    //-         p="Contacto"
+
+                ul(class="side-nav" id="mobile-demo")
+                    li
+                        a(href="#")= "Componentes"
+
+    body
+        block content
+    
+    footer.blue-grey.darken-4.page-footer.footer-paddin
+        div.container
+            div.row
+                div.col.l4.s12
+                    h5.white-text= "Footer Content"
+                    p.orange-text= " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aliquam, exercitationem laudantium, excepturi fuga distinctio cum impedit aperiam provident aspernatur recusandae magni ratione nemo nam fugit at velit unde ea."
+                div.col.l4.s12
+                    h5.white-text.text-center= "Links"
+                    center
+                        ul
+                            li.footer-link
+                                a(class="footer-a", href="/")= "Inicio"
+                            li.footer-link
+                                a(class="footer-a", href="/#mision_vision")= "Misión"
+                            li.footer-link
+                                a(class="footer-a", href="/#mision_vision")= "Visión"
+                            li.footer-link
+                                a(class="footer-a", href="/#nosotros")= "Nosotros"
+                            li.footer-link
+                div.col.l4.s12.img-f
+                    h5(class="white-text text-center")= "ManitasABC"
+                    img(src="https://static.pexels.com/photos/121508/pexels-photo-121508.jpeg", widht="300px", height="200px", class="footer-img")
+
+
+script(src="/javascripts/jquery-3.2.0.min.js")
+script(src="/javascripts/materialize.min.js")
+script(src="/javascripts/main.js")

@@ -1,0 +1,8 @@
+extends base.pug
+block content
+    h2.text-center.purple.white-text= elemento.texto
+    div.individual
+        img(src= elemento.imagen)
+        video(id="my-video" class="vjs-matrix video-js" width=640 height=440 controls data-setup='{}')
+            source(src= elemento.video type="video/mp4")
+            p= "Para ver este video actualize el navegador o bien utilice JavaScript"

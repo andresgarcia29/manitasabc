@@ -1,0 +1,26 @@
+{
+  "name": "manitasabc",
+  "version": "1.0.0",
+  "description": "Este es un proyecto prientado a una plataforma para aprender el lenguaje de señas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "supervisor server.js"
+  },
+  "author": "José Andrés García Manzo",
+  "license": "MIT",
+  "devDependencies": {
+    "supervisor": "^0.12.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-formidable": "^1.0.0",
+    "express-method-override": "0.0.3",
+    "express-session": "^1.15.2",
+    "mongoose": "^4.9.2",
+    "morgan": "^1.8.1",
+    "pug": "^2.0.0-beta11",
+    "serve-favicon": "^2.4.2"
+  }
+}

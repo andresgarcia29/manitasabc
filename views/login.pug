@@ -1,0 +1,33 @@
+extends base.pug
+
+
+block content
+    br
+    div.formulario
+
+        form(method="POST" action="")
+            
+            h2.text-center= "Inicia Sesión"
+
+            hr
+            br
+
+            if creado
+                div.success.green
+                    p.white-text.text-error= creado
+
+            if error
+                div.errorlogin.red
+                    p.white-text.text-error= "El usuario no es correcto"
+
+            div.input-field.col.s6.m6.g6
+                i.material-icons.prefix= "assignment"
+                input(type="text", class="validate", name="username", id="username")
+                label(for="username")= "Usuario"
+            
+            div.input-field.col.s6.m6.g6
+                i.material-icons.prefix= "lock"
+                input(type="password", class="validate", name="password", id="name")
+                label(for="name")= "Contraseña"
+            
+            button(class="button btn right", id="")= "Agregar"

@@ -1,0 +1,31 @@
+extends base.pug
+block content
+    h2.text-center= "Selecciona el nivel:"
+    
+    div.temas
+        a(href="/nivel1/abecedario")
+            div.tema
+                h3.blue-text= "Abecedario"
+                img(src="/images/abecedario.jpg")
+        
+        a(href="/nivel1/numeros")
+            div.tema
+                h3.red-text= "Numeros"
+                img(src="/images/numero.jpg")
+        
+        a(href="/nivel1/colores")
+            div.tema
+                h3.orange-text= "Colores"
+                img(src="/images/colores.png")
+                    
+        a(href="/nivel1/animales")
+            div.tema
+                h3.blue-text= "Animales"
+                img(src="/images/animales.jpg")
+        
+        a(href="/nivel1/saludos")
+            div.tema
+                h3.red-text= "Saludos"
+                img(src="/images/saludos.jpg")
+        
+        

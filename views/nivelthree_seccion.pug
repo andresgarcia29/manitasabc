@@ -1,0 +1,10 @@
+extends base.pug
+block content
+    div.contenido_seccion
+        each val in secciones_vista.length ? secciones_vista : ['There are no values']
+            a(href="/nivel3/" + val.seccion + "/" + val.texto)
+                div.letras_contenido
+                    h3= val.texto
+                    img(src= val.imagen)
+                    //- video(width=320 height=240 controls)
+                    //-     source(src= val.video type="video/mp4")

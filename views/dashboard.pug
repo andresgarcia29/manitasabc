@@ -1,0 +1,95 @@
+extends base.pug
+block content
+    h2.text-center= "Mi Perfil"
+    if (sexo == 1 || sexo == 0 || sexo == 3)
+        
+        div.mi_perfil.blue.white-text.profile
+            div.mi_perfil_media
+                img(src="/images/chico.png", class="img-responsive circle")
+            div.mi_perfil_data
+                h4= "Bienvenido " + name
+                hr
+                p.pofile.red= "Tu usuario es: " + username
+                p.pofile.red= "Tu correo es: " + email
+        div.row
+            div.container
+                h2.text-center= "Mi progreso"
+                div.mi_progreso
+                    div.row
+                        div.nivel1
+                            p.bold= "Nivel 1: 70%"
+                            div.progress
+                                div.determinate.blue(style="width: 70%")
+                    div.row
+                        div.nivel1
+                            p.bold= "Nivel 2: 40%"
+                            div.progress
+                                div.determinate.purple(style="width: 40%")
+                    div.row
+                        div.nivel1
+                            p.bold= "Nivel 3: 10%"
+                            div.progress
+                                div.determinate.red(style="width: 10%")
+
+        div.row
+            div.container
+                div.elecciones
+                    a(href="/learning")
+                        div.eleccion.red.white-text
+                            h3= "Aprender"
+                            i.material-icons.tam-eleccion= "trending_up"
+                    a(href="#")
+                        div.eleccion.green.white-text
+                            h3= "Examenes"
+                            i.material-icons.tam-eleccion= "filter_9_plus"
+        
+    if sexo == 2
+        div.mi_perfil.pink.white-text.profile
+            div.mi_perfil_media
+                img(src="/images/chico.png", class="img-responsive circle")
+            div.mi_perfil_data
+                h4= "Bienvenido " + name
+                hr
+                p.pofile.red= "Tu usuario es: " + username
+                p.pofile.red= "Tu correo es: " + email
+        div.row
+            div.container
+                h2.text-center= "Mi progreso"
+                div.mi_progreso
+                    div.row
+                        div.nivel1
+                            p.bold= "Nivel 1: 70%"
+                            div.progress
+                                div.determinate.orange(style="width: 70%")
+                    div.row
+                        div.nivel1
+                            p.bold= "Nivel 2: 40%"
+                            div.progress
+                                div.determinate.purple(style="width: 40%")
+                    div.row
+                        div.nivel1
+                            p.bold= "Nivel 3: 10%"
+                            div.progress
+                                div.determinate.red(style="width: 10%")
+                    div.row
+                        div.nivel1
+                            p.bold= "Nivel 4: 100%"
+                            div.progress
+                                div.determinate.blue(style="width: 100%")
+                    div.row
+                        div.nivel1
+                            p.bold= "Nivel 5: 50%"
+                            div.progress
+                                div.determinate.grey(style="width: 50%")
+
+        div.row
+            div.container
+                div.elecciones
+                    a(href="#")
+                        div.eleccion.red.white-text
+                            h3= "Aprender"
+                            i.material-icons.tam-eleccion= "trending_up"
+                    a(href="#")
+                        div.eleccion.green.white-text
+                            h3= "Examenes"
+                            i.material-icons.tam-eleccion= "filter_9_plus"

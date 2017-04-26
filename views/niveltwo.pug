@@ -1,0 +1,34 @@
+extends base.pug
+block content
+    h2.text-center= "Selecciona el nivel:"
+    
+    div.temas
+        a(href="/nivel2/semana")
+            div.tema
+                h3.blue-text= "Semana"
+                img(src="/images/semana.png")
+        
+        a(href="/nivel2/mes")
+            div.tema
+                h3.red-text= "Meses"
+                img(src="/images/meses.jpg")
+        
+        a(href="/nivel2/lugares")
+            div.tema
+                h3.orange-text= "Lugares"
+                img(src="/images/lugares.jpg")
+                    
+        a(href="/nivel2/transporte")
+            div.tema
+                h3.blue-text= "Transporte"
+                img(src="/images/transporte.jpg")
+        
+        a(href="/nivel2/familia")
+            div.tema
+                h3.red-text= "Familia"
+                img(src="/images/familia.jpg")
+
+        a(href="/nivel2/alimentos")
+            div.tema
+                h3.red-text= "Alimentos"
+                img(src="/images/alimentos.jpg")

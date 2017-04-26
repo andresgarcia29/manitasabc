@@ -1,0 +1,62 @@
+extends base.pug
+
+
+block content
+    br
+    div.formulario
+
+        form(method="POST" action="")
+            
+            h2.text-center= "Registrate"
+
+            hr
+            br
+
+            if creado
+                div.success.green
+                    p.white-text.text-error= creado
+            
+            if usuario
+                div.success.red
+                    p.white-text.text-error= "El usuario ya ha sido tomado"
+            
+            if email
+                div.success.red
+                    p.white-text.text-error= "El email ya ha sido tomado"
+
+            div.error.red
+                p.white-text.text-error= "Error"
+
+            div.input-field.col.s6.m6.g6
+                i.material-icons.prefix= "assignment"
+                input(type="text", class="validate", name="username", id="username")
+                label(for="username")= "Usuario"
+            
+            div.input-field.col.s6.m6.g6
+                i.material-icons.prefix= "account_circle"
+                input(type="text", class="validate", name="name", id="name")
+                label(for="name")= "Nombre Completo"
+            
+            div.input-field.col.s6.m6.g6
+                i.material-icons.prefix= "email"
+                input(type="email", class="validate", name="email", id="email")
+                label(for="email", data-error="Correo Electronico No Valido", data-success="Correcto")= "Correo Electronico"
+            
+            div.input-field.col.s6.m6.g6
+                i.material-icons.prefix= "lock"
+                input(type="password", class="validate", name="password", id="password")
+                label(for="password")= "Contraseña"
+            
+            div.input-field.col.s6.m6.g6
+                i.material-icons.prefix= "lock"
+                input(type="password", class="validate", id="passwordre")
+                label(for="passwordre")= "Repetir Contraseña"
+            
+            div.input-field.col.s6.m6.g6
+                select(name="sexo", id="sexo")
+                    option(value="", selected, disabled)= "Sexo"
+                    option(value="1")= "Hombre"
+                    option(value="2")= "Mujer"
+                    option(value="3")= "No especificado"
+            
+            button(class="button btn right", id="ajaxSign")= "Agregar"

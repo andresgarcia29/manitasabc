@@ -1,0 +1,19 @@
+extends base.pug
+block content
+    h2.text-center= "Selecciona el nivel:"
+    
+    div.temas
+        a(href="/nivel1")
+            div.tema
+                h3.text-center.blue-text= "Nivel 1"
+                img(src="/images/abecedario.jpg")
+        
+        a(href="/nivel2")
+            div.tema
+                h3.text-center.red-text= "Nivel 2"
+                img(src="/images/meses.jpg")
+        
+        a(href="/nivel3")
+            div.tema
+                h3.text-center.orange-text= "Nivel 3"
+                img(src="/images/ropa.jpg")

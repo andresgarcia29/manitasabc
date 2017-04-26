@@ -1,0 +1,143 @@
+extends base.pug
+
+
+block content
+    div.parallax-container#index-banner
+        div.section.no-pad-bot
+            div.container
+                br
+                br
+                h1.header.center.parallax-text= "Manitas ABC"
+                div.row.center
+                    h5.header.col.s12.light.parallax-text= "Estudia, aprende y diviertete... ¿Qué esperas para iniciar?"
+                div.row.center
+                    a(href="/create" id="download-button" class="btn-large waves-effect waves-light teal light")= "Registrate!"
+                br
+                br
+        div.parallax
+            img#fondoparallax(src="http://www.mytoyexpress.com/wp-content/uploads/2015/07/kids-computer-2.jpg")
+        
+    div.section.white.despazar
+        div.row.container
+            h2.header= "Manitas ABC"
+            p.grey-text.text-darken-3.lighten-3= "Bienvenidos a Manitas ABC una página en la cuál podrás aprender el lenguaje de señas. Para poder comunicarte nacionalmente con personas que sufren de algunos problemas."
+
+    
+    div.row.padding.light-blue.darken-4
+        div.container.blue
+            div.col.s4.m4.g4
+                div.icons
+                    i.material-icons.blue-text= "laptop_mac"
+                h5.text-center.white-text= "Estudia en cualquier lugar donde quieras"
+                p.white-text= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error laudantium autem placeat, ad alias assumenda totam corporis officia blanditiis ducimus aliquid atque dolorum illo sed, consequatur deleniti ea vero."
+            div.col.s4.m4.g4
+                div.icons
+                    i.material-icons.red-text= "flash_on"
+                h5.text-center.white-text= "Fácil y rápido de aprender"
+                p.white-text= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error laudantium autem placeat, ad alias assumenda totam corporis officia blanditiis ducimus aliquid atque dolorum illo sed, consequatur deleniti ea vero."
+            div.col.s4.m4.g4
+                div.icons
+                    i.material-icons.green-text= "touch_app"
+                h5.text-center.white-text= "Ten acceso a todo el contenido solo registrándote"
+                p.white-text= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex error laudantium autem placeat, ad alias assumenda totam corporis officia blanditiis ducimus aliquid atque dolorum illo sed, consequatur deleniti ea vero."
+        
+    div.fluid-container.anuncio#mision_vision
+
+        h2.text-center.titulopeque= "Misión y Visión"
+
+        div.row.contenido
+
+            div.peque
+                p.titulo_cuadros= "Misión"
+                p.cuadros= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae ullam voluptates expedita obcaecati distinctio saepe ut, voluptatem enim, molestias quia ipsum error, fugit ad dolor autem sit qui voluptatum."
+                
+            div.peque
+                p.titulo_cuadros= "Visión"
+                p.cuadros= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quae ullam voluptates expedita obcaecati distinctio saepe ut, voluptatem enim, molestias quia ipsum error, fugit ad dolor autem sit qui voluptatum.  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, iste porro. Natus sequi, id eius enim commodi dolore magnam quis accusantium amet! Voluptas ab consequatur dolorum aut voluptate corporis quidem."
+    
+
+    div.parallax-container#index-banner
+        div.section.no-pad-bot
+            div.container
+                br
+                br
+                h1.header.center.parallax-text= "Aprende Fácil"
+                div.row.center
+                    h5.header.col.s12.light.parallax-text= "Aprender nunca ha sido tan divertido"
+                div.row.center
+                    a(href="/create" id="download-button" class="btn-large waves-effect waves-light teal light")= "Registrate!"
+                br
+                br
+        div.parallax
+            img(src="https://static.pexels.com/photos/240145/pexels-photo-240145.jpeg")
+
+            
+    div.fluid-container
+        div.row
+            h2.text-center= "Opiniones"
+
+            div.comentarios
+
+                div.comentario
+                    img(class="circle", src="http://www.mytoyexpress.com/wp-content/uploads/2015/07/kids-computer-2.jpg")
+                    div.contenido_comentario
+                        p= "La mejor página para aprender, es excelente, interactiva y sobre todo me ayúda el día con día para continuar con mi aprendizaje"
+                        b= "-Andres Garcia"
+                
+                div.comentario
+                    img(class="circle", src="https://static.pexels.com/photos/240145/pexels-photo-240145.jpeg")
+                    div.contenido_comentario
+                        p= "La mejor página para aprender, es excelente, interactiva y sobre todo me ayúda el día con día para continuar con mi aprendizaje"
+                        b= "-Andres Garcia"
+                
+                div.comentario
+                    img(class="circle", src="https://static.pexels.com/photos/121508/pexels-photo-121508.jpeg")
+                    div.contenido_comentario
+                        p= "La mejor página para aprender, es excelente, interactiva y sobre todo me ayúda el día con día para continuar con mi aprendizaje"
+                        b= "-Andres Garcia"
+                
+                div.comentario
+                    img(class="circle", src="http://www.mytoyexpress.com/wp-content/uploads/2015/07/kids-computer-2.jpg")
+                    div.contenido_comentario
+                        p= "La mejor página para aprender, es excelente, interactiva y sobre todo me ayúda el día con día para continuar con mi aprendizaje"
+                        b= "-Andres Garcia"
+    
+    div.container#nosotros
+        div.row
+            h2.text-center= "Nosotros"
+            div.nosotross
+                div.nosotros
+                    h5.text-nosotros.light-blue.darken-4= "Andrés García"
+                    img(class="img-responsive", src="https://pbs.twimg.com/profile_images/855943859532054528/5lirRWZ4.jpg")
+                    p= "Programación"
+                    a(href="https://www.facebook.com/profile.php?id=100012411225815", target="_blank")= "Facebook"
+                
+                div.nosotros
+                    h5.text-nosotros.pink= "Cecilia Du Lac"
+                    img(class="img-responsive", src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/17425178_423731517977242_2344913570757931994_n.jpg?oh=9f304594000b27e21209bef1be8cd201&oe=594E8492")
+                    p= "Implementación"
+                    a(href="https://www.facebook.com/CeciiMe", target="_blank")= "Facebook"
+                
+                div.nosotros
+                    h5.text-nosotros.red= "Karen García"
+                    img(class="img-responsive", src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/16195250_1385616654823371_1057908686985506067_n.jpg?oh=f5864a3524d7fc3d457053a9f442a2e2&oe=5995BFCC")
+                    p= "Fotografía"
+                    a(href="https://www.facebook.com/karenjaqueline.garciaarellano", target="_blank")= "Facebook"
+                
+                div.nosotros
+                    h5.text-nosotros.green= "Cesar Rivera"
+                    img(class="img-responsive", src="https://scontent-dft4-2.xx.fbcdn.net/v/t1.0-9/1417_10205272128509010_2659970743028138127_n.jpg?oh=1a7977f642e4aa1b135f8f5dab71d3a9&oe=59532A3E")
+                    p= "Investigación"
+                    a(href="https://www.facebook.com/cesar.vazquezsaucedo", target="_blank")= "Facebook"
+                
+                div.nosotros
+                    h5.text-nosotros.orange= "Betsy Mendoza"
+                    img(class="img-responsive", src="https://cdn1.iconfinder.com/data/icons/user-pictures/100/female1-512.png")
+                    p= "Implementación"
+                    a(href="https://www.facebook.com/betsy.mendoza.37", target="_blank")= "Facebook"
+                
+                div.nosotros
+                    h5.text-nosotros.purple= "Uriel González"
+                    img(class="img-responsive", src="https://s-media-cache-ak0.pinimg.com/originals/b1/bb/ec/b1bbec499a0d66e5403480e8cda1bcbe.png")
+                    p= "Investigación"
+                    a(href="#", target="_blank")= "Facebook"

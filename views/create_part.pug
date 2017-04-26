@@ -1,0 +1,83 @@
+extends base.pug
+block content
+    br
+    div.formulario
+
+        form(method="POST", action="", enctype="multipart/form-data")
+            
+            h2.text-center= "Crear Contenido"
+
+            hr
+            br
+            
+            if imagenfalsa
+                div.success.red
+                    p.white-text.text-error= "Imagen o vídeo invalido"
+            
+            if repitiendo
+                div.success.red
+                    p.white-text.text-error= "Imagen o vídeo repetido"
+
+            if exito
+                div.success.green
+                    p.white-text.text-error= "Creado"
+            
+            if error
+                div.success.red
+                    p.white-text.text-error= "Ocurrio un error al ser creado"
+
+            div.error.red
+                p.white-text.text-error= "Error"
+
+            div.input-field.col.s6.m6.g6
+                i.material-icons.prefix= "assignment"
+                input(type="text", class="validate", name="texto", id="texto")
+                label(for="texto")= "Texto"
+            
+            div.input-field.col.s6.m6.g6
+                div.file-field.input-field
+                    div.btn.green
+                        span= "Imagen"
+                        input(type="file", name="imagen")
+                    div.file-path-wrapper
+                        input(class="file-path validate", type="text")
+            
+            div.input-field.col.s6.m6.g6
+                div.file-field.input-field
+                    div.btn.green
+                        span= "Video"
+                        input(type="file", name="video")
+                    div.file-path-wrapper
+                        input(class="file-path validate", type="text")
+            
+            div.input-field.col.s6.m6.g6
+                select(name="nivel")
+                    option(value="", selected, disabled)= "Nivel"
+                    option(value="1")= "1"
+                    option(value="2")= "2"
+                    option(value="3")= "3"
+            
+            div.input-field.col.s6.m6.g6
+                select(name="seccion")
+                    option(value="", selected, disabled)= "Sección"
+                    option(value="abecedario")= "abecedario"
+                    option(value="numeros")= "numeros"
+                    option(value="colores")= "colores"
+                    option(value="semana")= "semana"
+                    option(value="mes")= "mes"
+                    option(value="animales")= "animales"
+                    option(value="lugares")= "lugares"
+                    option(value="transporte")= "transporte"
+                    option(value="ropa")= "ropa"
+                    option(value="familia")= "familia"
+                    option(value="alimentos")= "alimentos"
+                    option(value="saludos")= "saludos"
+                    option(value="profesiones")= "profesiones"
+                    option(value="verbos")= "verbos"
+                    option(value="comida")= "comida"
+                    option(value="preguntas")= "preguntas"
+                    option(value="escuela")= "escuela"
+                    option(value="casa")= "casa"
+                    option(value="expresiones")= "expresiones"
+            
+            input(type="submit", class="btn green right")
